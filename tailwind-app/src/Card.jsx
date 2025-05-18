@@ -1,10 +1,10 @@
 import imgDefault from './assets/react.svg'
-function Card(){
+function Card(props){
 return (
 
 <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
     <a href="#">
-        <img className="rounded-t-lg" src={imgDefault} alt="" />
+        <img className="rounded-t-lg" src={props.image?props.image:imgDefault} alt="" />
     </a>
     <div className="p-5">
         <a href="#">
